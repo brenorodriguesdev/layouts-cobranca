@@ -1,4 +1,4 @@
-interface CobrancaHeader {
+export class CobrancaHeader {
     cod_registro: string
     cod_remessa: string
     cod_convenio: string
@@ -12,7 +12,7 @@ interface CobrancaHeader {
     reservado_futuro: string
 }
 
-interface CobrancaItem {
+export class CobrancaItem {
     cod_registro: string
     id_cliente_empresa: string
     agencia_debito: string
@@ -27,14 +27,14 @@ interface CobrancaItem {
     codigo_movimento: string
 }
 
-interface CobrancaFooter {
+export class CobrancaFooter {
     cod_registro: string
     total_registros: string
     valor_total: string
     reservado_futuro: string
 }
 
-export interface Cobranca {
+export class Cobranca {
     header: CobrancaHeader
     cobrancas: CobrancaItem[]
     footer: CobrancaFooter
