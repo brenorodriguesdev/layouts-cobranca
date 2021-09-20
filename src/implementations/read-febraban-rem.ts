@@ -10,6 +10,7 @@ export class ReadFebrabanRem implements ReadRem {
         let cobranca: Cobranca = new Cobranca()
         cobranca.header = new CobrancaHeader()
         cobranca.cobrancas = []
+        cobranca.cobrancasBradesco = []
         cobranca.footer = new CobrancaFooter()
 
         const data = await fs.readFileSync(file)
